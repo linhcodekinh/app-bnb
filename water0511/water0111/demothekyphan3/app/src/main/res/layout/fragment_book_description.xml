@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_250"
+                        android:src="@drawable/steak"
+                        android:background="@drawable/shape_show_default_pic"
+                        android:scaleType="centerCrop" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_pic"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/dp_23"
+                        android:paddingTop="@dimen/dp_15"
+                        android:paddingRight="@dimen/dp_26">
+
+                        <ImageView
+                            android:id="@+id/iv_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/dp_7"
+                            android:paddingRight="@dimen/dp_20"
+                            android:paddingBottom="@dimen/dp_5"
+                            android:src="@drawable/ic_meal_js_health"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:lineSpacingMultiplier="0.9"
+                            android:text="Maple-Roasted Pumpkin Apple Salad"
+                            android:textColor="#191348"
+                            android:textSize="@dimen/sp_24" />
+
+                        <TextView
+                            android:id="@+id/tv_excerpt"
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:lineSpacingMultiplier="1.2"
+                            android:text="Sweet, creamy and crunchy. What more could you want from a salad? This divine recipe is delicious served with your protein  of choice."
+                            android:textColor="#545569"
+                            android:textSize="@dimen/sp_16" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:background="#efefef"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_17"
+                            android:layout_marginBottom="@dimen/dp_8"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/dp_22"
+                            android:paddingRight="@dimen/dp_20">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/vector_ic_caculator" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_14"
+                                    android:alpha="0.8"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <com.example.sslost.Activity.View.UI.TextNumber
+                                        android:id="@+id/tn_quanity"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:textColor="#9da3b4"
+                                        android:textSize="36sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="GRAMS"
+                                        android:textColor="#9da3b4"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/vec_profile_calories" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_14"
+                                    android:alpha="0.8"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <com.example.sslost.Activity.View.UI.TextNumber
+                                        android:id="@+id/tv_calories"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:textColor="#9da3b4"
+                                        android:textSize="36sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="CALORIES"
+                                        android:textColor="#9da3b4"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/serving_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_17"
+                            android:layout_marginBottom="@dimen/dp_8"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tv_quanity_fixed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingMultiplier="0.9"
+                                android:text="Quanity:"
+                                android:textColor="#191348"
+                                android:textSize="@dimen/sp_18"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tv_quanity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_4"
+                                android:layout_marginRight="@dimen/dp_4"
+                                android:autoSizeMaxTextSize="@dimen/sp_18"
+                                android:autoSizeMinTextSize="@dimen/sp_13"
+                                android:gravity="center"
+                                android:lineSpacingMultiplier="0.9"
+                                android:maxLines="3"
+                                android:text="30 Z meat, 1 Medium Fruit and ½ Cup"
+                                android:textColor="#191348"
+                                android:textSize="@dimen/sp_18"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toStartOf="@id/ll_servings"
+                                app:layout_constraintStart_toEndOf="@id/tv_quanity_fixed"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_servings"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/iv_quanity_minus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/vec_meal_minus" />
+
+                                <TextView
+                                    android:id="@+id/tv_meal_quanity"
+                                    android:layout_width="@dimen/dp_100"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:lineSpacingMultiplier="0.9"
+                                    android:text="50"
+                                    android:textColor="#191348"
+                                    android:textSize="@dimen/sp_18" />
+
+                                <ImageView
+                                    android:id="@+id/iv_quanity_plus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/vec_meal_plus" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/iv_pic"
+                        android:layout_marginTop="-25dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_5"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/shape_gradient_schedule_browse" />
+
+                        <ImageView
+                            android:id="@+id/iv_collect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dp_20"
+                            android:src="@drawable/selector_collected_meal_detail" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/frame_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingRight="@dimen/dp_16">
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_80"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/ll_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/dp_23"
+                        android:paddingRight="@dimen/dp_26"
+                        android:visibility="visible">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#efefef"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:focusable="true"
+
+                            android:text="YOUR RATING"
+                            android:textColor="#191348"
+                            android:textSize="@dimen/sp_18" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1"
+                            android:text="Rate this meal to improve your recommendations."
+                            android:textColor="#545569"
+                            android:textSize="@dimen/sp_16" />
+
+                        <LinearLayout
+                            android:id="@+id/rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/dp_15"
+                            android:layout_marginBottom="@dimen/dp_20"
+                            android:orientation="horizontal">
+
+                            <com.example.sslost.Activity.View.StarView
+                                android:id="@+id/sv_rate"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                app:emptyColor="#f5f8ff"
+                                app:fillsColor="@color/star_fill_color"
+                                app:starCount="5"
+                                app:starDistance="18dp"
+                                app:starSize="41dp"
+                                app:starVec="@drawable/vec_star_meal_icon" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_related"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/dp_23"
+                        android:paddingRight="@dimen/dp_26"
+                        android:visibility="visible">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#efefef"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_swap_related"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:focusable="true"
+                            android:text="hahahah"
+                            android:textColor="#191348"
+                            android:textSize="@dimen/sp_18" />
+
+                        <TextView
+                            android:id="@+id/tv_swap_tip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Swap this meal for one of these options."
+                            android:textColor="#545569"
+                            android:textSize="@dimen/sp_16"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout
+            android:id="@+id/ll_save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_marginBottom="@dimen/dp_18"
+            android:background="@drawable/selector_btn_work_action"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="suc"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

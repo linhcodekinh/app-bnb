@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SSLost</string>
+    <string name="description">Description</string>
+    <string name="episodes">Episodes</string>
+    <string name="remove_ad">Remove ads</string>
+    <string name="tip_iab">Upgrade to remove ads</string>
+    <string name="why_see_ads">Why I see ads</string>
+    <string name="setting_general">General settings</string>
+    <string name="contact_us">Contact us</string>
+    <string name="setting_privacy">Pivacy Policy</string>
+    <string name="rate_us">Rate us</string>
+    <string name="feedback">Feedback</string>
+    <string name="version_with_num">Version 1.0</string>
+    <string name="setting_copy">Copyright 2020</string>
+    <string name="setting_profile">Edit profile</string>
+    <string name="setting_plan">Edit Plan</string>
+    <string name="change_language_title">Language options</string>
+    <string name="logout">Logout</string>
+    <string name="login_method">Login Methods</string>
+    <string name="set_reminders">Reminder</string>
+    <string name="add_reminder">Add reminder</string>
+    <string name="reminder_tips">Reminder Tips</string>
+
+<!--    Rating Dialog-->
+    <string name="rating_dialog_experience">How was your experience with us?</string>
+    <string name="rating_dialog_maybe_later">Maybe later</string>
+    <string name="rating_dialog_never">Never</string>
+    <string name="rating_dialog_feedback_title">Feedback</string>
+    <string name="rating_dialog_submit">Submit</string>
+    <string name="rating_dialog_cancel">Cancel</string>
+    <string name="rating_dialog_suggestions">Suggest us what went wrong and we\'ll work on it!</string>
+</resources>

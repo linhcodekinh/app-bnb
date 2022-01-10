@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_setting_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20">
+
+
+        <LinearLayout
+            android:id="@+id/ll_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                app:srcCompat="@drawable/achievement_category_champion" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:text="click to login"
+                android:textColor="@color/title"
+                android:textSize="@dimen/sp_17" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_voice1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_setting_gray"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp">
+
+                <ImageView
+                    android:id="@+id/iv_coin"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/coin" />
+
+                <TextView
+                    android:id="@+id/tv_coin"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/iv_coin"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:maxLines="1"
+                    android:text="0000000000"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tv_purchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_coin"
+                    android:layout_marginTop="20dp"
+                    android:text="Purchase "
+                    android:textColor="#363636"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_purchase_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_coin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/tv_purchase"
+                    android:text="000000"
+                    android:textColor="#A0A0A0"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_purchase"
+                    android:layout_marginTop="20dp"
+                    android:text="Free "
+                    android:textColor="#363636"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_free_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_purchase"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/tv_free"
+                    android:text="00000"
+                    android:textColor="#A0A0A0"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_buy_coin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@drawable/shape_bg_ad_purple"
+                    android:gravity="center"
+                    android:minWidth="@dimen/dp_75"
+                    android:paddingLeft="@dimen/dp_11"
+                    android:paddingRight="@dimen/dp_12"
+                    android:text="Buy Coin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_30">
+
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_setting_gray"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_vibration"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:src="@drawable/vec_search" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="hahahahaha"
+                    android:textColor="@color/title"
+                    android:textSize="@dimen/sp_16"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_settings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_setting_gray"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_voice"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_marginTop="@dimen/dp_20"
+                    app:srcCompat="@drawable/eye_visible" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="ahahaha"
+                    android:textColor="@color/title"
+                    android:textSize="@dimen/sp_16"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/iv_ads"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/steak" />
+
+    </LinearLayout>
+</LinearLayout>

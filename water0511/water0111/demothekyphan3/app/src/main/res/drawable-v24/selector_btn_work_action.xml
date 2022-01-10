@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    android:exitFadeDuration="@android:integer/config_shortAnimTime">
+    <item android:state_pressed="true" android:drawable="@drawable/shape_work_action"/>
+    <item android:state_selected="true" android:drawable="@drawable/shape_work_action_s"/>
+    <item android:state_selected="false" android:drawable="@drawable/shape_work_action"/>
+</selector>
