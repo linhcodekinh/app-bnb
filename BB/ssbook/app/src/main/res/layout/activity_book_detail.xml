@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/htab_collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:contentScrim="@color/white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/iv_pic"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/steak"
+                            android:background="@drawable/shape_show_default_pic"
+                            android:scaleType="centerCrop" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="top"
+                android:clipChildren="false"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/ic_setting"
+                    android:layout_width="@dimen/activity_icon_actionbar_size"
+                    android:layout_height="@dimen/activity_icon_actionbar_size"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/activity_icon_actionbar_margin"
+                    android:layout_marginEnd="@dimen/activity_icon_actionbar_margin"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/vector_ic_download_book" />
+
+                <ImageView
+                    android:id="@+id/ic_question"
+                    android:layout_width="@dimen/activity_icon_actionbar_size"
+                    android:layout_height="@dimen/activity_icon_actionbar_size"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="@dimen/activity_icon_actionbar_margin"
+                    android:layout_marginTop="@dimen/activity_icon_actionbar_margin"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/vector_ic_arrow_back"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/text_user_name_toolbar"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Nguyễn Quang Linh"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:visibility="visible"
+                    app:autoSizeMaxTextSize="20sp"
+                    app:autoSizeMinTextSize="10sp"
+                    app:autoSizeTextType="uniform" />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:scrollbars="horizontal"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:tabIndicatorColor="@drawable/bottom_navigation_colors"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/tab_text"
+            app:tabSelectedTextColor="@color/orange_1"
+            app:tabTextColor="@color/text_see_all_selector" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

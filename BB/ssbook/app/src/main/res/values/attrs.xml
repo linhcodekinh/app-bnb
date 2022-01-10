@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GradientView">
+        <attr name="colorData" format="string"/>
+        <attr name="coverHeight" format="dimension"/>
+        <attr name="endPoint" format="string"/>
+        <attr name="isDefault" format="boolean"/>
+        <attr name="posData" format="string"/>
+        <attr name="showCover" format="boolean"/>
+        <attr name="startPoint" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="StarView">
+        <attr name="emptyColor" format="color"/>
+        <attr name="fillsColor" format="color"/>
+        <attr name="starCount" format="integer"/>
+        <attr name="starDistance" format="dimension"/>
+        <attr name="starSize" format="dimension"/>
+        <attr name="starVec" format="reference"/>
+    </declare-styleable>
+</resources>

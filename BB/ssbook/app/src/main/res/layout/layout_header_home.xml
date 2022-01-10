@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/dp_20"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:layout_marginTop="@dimen/dp_18"
+    android:background="@drawable/bg_home"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <SearchView
+        android:id="@+id/rl_add_weight"
+        android:layout_width="match_parent"
+        android:layout_height="47.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="18.0dip"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginRight="18.0dip"
+        android:layout_marginBottom="25.0dip"
+        android:background="@drawable/shape_radius_blue"
+        android:fontFamily="@font/aktiv_medium"
+        />
+
+
+
+
+</LinearLayout>
